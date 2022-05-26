@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas grandes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color: gray;
+        }
+
+        tbody > tr:nth-child(2n) {
+            /* Efeito zebrado (odd, even, 2n, 3n, 4n) */
+            background-color: lightgray ;
+        }
+
+        td.num {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        Anatomia para tabelas grandes
+        Table
+            Caption (legenda)
+            Head
+            Body
+            Foot
+    -->
+    <table>
+        <caption>População das unidades federativas do Brasil</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.264.943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.873.064</td>
+            </tr>
+            <tr>
+                <td>Parana</td>
+                <td class="num">11.433.957</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11.377.239</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num"><strong>210.147.125</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime amet dolorum nam enim tempore, qui porro reiciendis sunt sint fugiat repellat dignissimos, blanditiis autem tenetur ex, voluptas facilis necessitatibus odit animi iure reprehenderit! Exercitationem eos eaque iusto sed possimus perspiciatis est sint mollitia sit tempora distinctio illo fugiat nulla, voluptatem nisi aperiam error repellendus doloremque. Repellat corrupti, perferendis cupiditate, neque atque voluptatem laboriosam reprehenderit ut recusandae commodi sed porro quaerat vel laudantium quisquam ipsum soluta iusto debitis magni? Alias soluta modi facere dignissimos! Omnis ex atque necessitatibus aliquid earum autem aspernatur? Adipisci blanditiis, officia aliquid eum atque ab aut deleniti libero voluptates dolore magnam odit, optio itaque quo vel eaque tenetur ipsam. Ut aut neque eligendi aperiam optio repellendus consequatur ipsa. Voluptatem, quia. Qui dolorem ad, earum odit vero suscipit sed, fugiat vitae magni velit aspernatur nulla facilis ipsa laudantium sunt sint porro beatae dolor. In aspernatur debitis a rerum illum ipsam qui veritatis asperiores doloremque odio reiciendis possimus quo eos officia voluptates mollitia, explicabo voluptate magni hic tempora? Id itaque fugiat deserunt ipsam repellendus dolorum. Dolorum facilis vel, vero accusantium ratione laboriosam, nemo illum optio corporis quae veritatis ipsa sequi! Similique impedit in quae, vero animi mollitia repudiandae? Omnis quam velit mollitia fugiat est labore aut voluptas suscipit atque vero repellendus, laboriosam libero, aliquam, inventore sed ipsum quasi! Minima debitis fugit laborum perspiciatis, iusto a eos, ipsum ullam perferendis similique nobis quia et libero tenetur eum veritatis! Quas quisquam asperiores soluta pariatur in alias, deleniti quis sapiente ab praesentium inventore nam quae natus placeat omnis fugiat fuga ducimus animi! Nulla obcaecati doloremque sint vero illum saepe fugit laborum. Alias dolorum neque facilis earum commodi ea corrupti quis enim totam nobis. Corrupti dolores debitis magnam nam quas tempore labore itaque provident beatae doloremque quasi quae, ad consequuntur numquam deserunt dolorem.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime amet dolorum nam enim tempore, qui porro reiciendis sunt sint fugiat repellat dignissimos, blanditiis autem tenetur ex, voluptas facilis necessitatibus odit animi iure reprehenderit! Exercitationem eos eaque iusto sed possimus perspiciatis est sint mollitia sit tempora distinctio illo fugiat nulla, voluptatem nisi aperiam error repellendus doloremque. Repellat corrupti, perferendis cupiditate, neque atque voluptatem laboriosam reprehenderit ut recusandae commodi sed porro quaerat vel laudantium quisquam ipsum soluta iusto debitis magni? Alias soluta modi facere dignissimos! Omnis ex atque necessitatibus aliquid earum autem aspernatur? Adipisci blanditiis, officia aliquid eum atque ab aut deleniti libero voluptates dolore magnam odit, optio itaque quo vel eaque tenetur ipsam. Ut aut neque eligendi aperiam optio repellendus consequatur ipsa. Voluptatem, quia. Qui dolorem ad, earum odit vero suscipit sed, fugiat vitae magni velit aspernatur nulla facilis ipsa laudantium sunt sint porro beatae dolor. In aspernatur debitis a rerum illum ipsam qui veritatis asperiores doloremque odio reiciendis possimus quo eos officia voluptates mollitia, explicabo voluptate magni hic tempora? Id itaque fugiat deserunt ipsam repellendus dolorum. Dolorum facilis vel, vero accusantium ratione laboriosam, nemo illum optio corporis quae veritatis ipsa sequi! Similique impedit in quae, vero animi mollitia repudiandae? Omnis quam velit mollitia fugiat est labore aut voluptas suscipit atque vero repellendus, laboriosam libero, aliquam, inventore sed ipsum quasi! Minima debitis fugit laborum perspiciatis, iusto a eos, ipsum ullam perferendis similique nobis quia et libero tenetur eum veritatis! Quas quisquam asperiores soluta pariatur in alias, deleniti quis sapiente ab praesentium inventore nam quae natus placeat omnis fugiat fuga ducimus animi! Nulla obcaecati doloremque sint vero illum saepe fugit laborum. Alias dolorum neque facilis earum commodi ea corrupti quis enim totam nobis. Corrupti dolores debitis magnam nam quas tempore labore itaque provident beatae doloremque quasi quae, ad consequuntur numquam deserunt dolorem.</p>
+</body>
+</html>
