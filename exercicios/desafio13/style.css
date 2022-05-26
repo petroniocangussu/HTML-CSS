@@ -1,0 +1,49 @@
+@charset "UTF-8";
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+table {
+    width: 600px;
+    border-collapse: collapse;
+}
+tr, td {
+    border: 1px solid black;
+    padding: 10px;
+    background-color: lightblue;
+}
+tr {
+    height: 45px;
+}
+caption {
+    font-size: 3em;
+    font-weight: bolder;
+    background-color: gray;
+    color: white;
+    border: 1px solid black;
+    text-shadow: 2px 2px 2px black;
+}
+thead, th {
+    border: 1px solid black;
+    font-weight: bold;
+    font-size: 1.2em;
+    background-color: gray;
+    color: white;
+}
+td.principal {
+    font-weight: bold;
+    font-size: 1.2em;
+    text-align: center;
+    background-color: rgb(123, 170, 185);
+}
+td.nome {
+    text-decoration: underline;
+    text-align: left;
+    width: 150px;
+}
+td.media {
+    background-color: gray;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+}
